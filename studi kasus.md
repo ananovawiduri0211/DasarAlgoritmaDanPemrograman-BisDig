@@ -1,61 +1,85 @@
 # STUDI KASUS 1 
-# Penjelasan Fungsi dan Rekursi pada Faktorial
+ # Penjelasan Fungsi dan Rekursi pada Faktorial
 
 ## Manfaat Penggunaan Fungsi
 
 - **Modularitas**  
-  Memecah program menjadi bagian kecil yang mudah dikelola dan dipahami.
+  Fungsinya adalah memisahkan logika penghitungan dari bagian input/output, sehingga kode lebih mudah dibaca dan diperbaiki.
 - **Penggunaan Ulang Kode**  
-  Fungsi dapat dipanggil berkali-kali tanpa menulis ulang kode.
+  Kode dapat dipanggil berkali-kali dengan input yang berbeda tanpa harus menulis ulang logika perhitungan.
 - **Memudahkan Debugging dan Pemeliharaan**  
   Fokus memperbaiki fungsi tanpa harus meninjau seluruh program.
 - **Meningkatkan Readabilitas**  
   Nama fungsi menjelaskan tujuan kode sehingga mudah dimengerti.
 
-## Cara Kerja Rekursi dalam Menghitung Faktorial
 
+## Cara Kerja Rekursi dalam Menghitung Faktorial
+**Rekursi adalah teknik pemanggilan fungsi dari dalam fungsi itu sendiri. Pada kode faktorial(n), fungsi akan terus memanggil dirinya sendiri dengan nilai n - 1, sampai mencapai basis kasus yaitu n == 0 atau n == 1. Saat itulah pemanggilan berhenti dan hasilnya dihitung mundur.**
 1. **Basis Kasus**  
    Jika `n` adalah 0 atau 1, fungsi mengembalikan 1 sebagai nilai faktorial.
 2. **Langkah Rekursif**  
    Jika `n > 1`, fungsi memanggil dirinya sendiri dengan `n - 1` dan mengalikan hasilnya dengan `n`.  
 
+
+**Contoh:
+Jika n = 4, maka prosesnya seperti ini:**
+
+    faktorial(4)
+    =4 * faktorial(3)
+    = 4 * 3 * faktorial(2)
+    = 4 * 3 * 2 * faktorial(1)
+    = 4 * 3 * 2 * 1
+    = 24
+
+
+
 # STUDI KASUS 2 
-# Penjelasan Struktur Kontrol Percabangan untuk Logika Pemberian Diskon
-
-## Apa itu Struktur Kontrol Percabangan?
-
-Struktur kontrol percabangan adalah mekanisme dalam pemrograman yang memungkinkan program mengambil keputusan berdasarkan kondisi tertentu. Dengan percabangan, program dapat menjalankan perintah berbeda sesuai dengan nilai kondisi yang diperiksa.
+# Penjelasan penggunaan perulangan dan array (list) 
 
 
-## Contoh Penggunaan Percabangan dalam Logika Pemberian Diskon
+#  1. Perulangan
 
-Misalnya, kita ingin memberikan diskon kepada pelanggan yang melakukan pembelian di atas jumlah tertentu. Logika sederhananya adalah:
+    for i in range(jumlah_siswa):
+    nilai_siswa = float(input(f"Masukkan nilai siswa ke-{i + 1}: "))
+    nilai.append(nilai_siswa)
 
-- Jika total belanja lebih dari 100.000, maka pelanggan mendapatkan diskon 5% dan voucher.
-- Jika tidak, maka tidak ada diskon atau voucher diberikan.
+**Perulangan ini berfungsi untuk mengulangi proses input sebanyak jumlah siswa yang dimasukkan sebelumnya.
+Setiap iterasi akan meminta pengguna untuk memasukkan satu nilai, dan menyimpannya ke dalam list.
+Dengan perulangan, program menjadi lebih efisien dan tidak perlu menulis kode input secara manual lima kali.**
 
-Struktur percabangan `if` dan `else` sangat cocok untuk kasus ini.
+# 2. Array (List)
+**Di bagian ini, list nilai [] digunakan untuk menyimpan seluruh nilai siswa.
+List memungkinkan kita menyimpan banyak data dalam satu variabel, dan memprosesnya dengan mudah — seperti mencari nilai tertinggi, rata-rata, dsb.
+Saat setiap siswa menginput nilai, nilainya akan ditambahkan ke list nilai menggunakan:**
 
----
+    nilai.append(nilai_siswa)
 
-## Penjelasan Struktur Percabangan pada Contoh Kode Faktorial dan Nilai Tertinggi
+# 3. Mencari Nilai Tertinggi
+    tertinggi = max(nilai)
+    indeks = nilai.index(tertinggi) + 1
 
-Meskipun kode berikut tidak langsung memberikan diskon, prinsip percabangan dapat diterapkan untuk logika pemberian diskon. Berikut penjelasan singkat kode contoh:
+**Fungsi max(nilai) mencari nilai tertinggi dalam list.
+nilai.index(tertinggi) mengembalikan posisi (indeks) nilai tersebut dalam list (dimulai dari 0).
+Dan setelahnya tambahkan +1 agar siswa ditampilkan sebagai urutan ke-1, ke-2, dst., bukan indeks 0.**
 
+# 4. Output Program
+    Masukkan jumlah siswa: 5
+    Masukkan nilai siswa ke-1: 99
+    Masukkan nilai siswa ke-2: 98
+    Masukkan nilai siswa ke-3: 97
+    Masukkan nilai siswa ke-4: 96
+    Masukkan nilai siswa ke-5: 95
 
----
+  **Maka Hasil yang diperoleh sebagi berikut:**
+  
+    Nilai tertinggi adalah 99.0 dan siswa ke-1 mendapatkannya.
+# 5. Kesimpulan 
 
-## Cara Kerja Struktur Percabangan dalam Logika Diskon
+**Konsep	Fungsi di Program**
 
-- **If**: Mengecek apakah kondisi tertentu terpenuhi (misal, nilai tertinggi >= 90). Jika benar, jalankan blok kode diskon 10%.
-- **Elif**: Jika kondisi pertama salah, cek kondisi berikutnya (nilai >= 75). Jika benar, jalankan diskon 5%.
-- **Else**: Jika semua kondisi sebelumnya salah, jalankan blok kode alternatif (tidak ada diskon).
-
----
-
-## Kesimpulan
-
-Struktur kontrol percabangan memungkinkan program untuk membuat keputusan berdasarkan kondisi tertentu, seperti memberikan diskon jika syarat terpenuhi. Dengan menggunakan `if`, `elif`, dan `else`, kita dapat mengatur berbagai skenario pemberian diskon sesuai kebutuhan logika bisnis.
+**/Perulangan guna	Mengotomatisasi input nilai 5 siswa tanpa menulis berulang.
+Array/List berguna untuk	Menyimpan semua nilai siswa dalam satu tempat.
+Dan Max()	Mengambil nilai tertinggi dari semua nilai yang dikumpulkan.**
 
 
 
