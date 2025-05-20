@@ -86,18 +86,6 @@ Dan Max()	Mengambil nilai tertinggi dari semua nilai yang dikumpulkan.**
 #  STUDI KASUS 3 
 # # Penjelasan Struktur Kontrol Percabangan pada Logika Pemberian Diskon
 
-## Deskripsi Singkat
-
-Kode berikut menunjukkan bagaimana **struktur kontrol percabangan** (`if` dan `else`) digunakan untuk menentukan apakah pelanggan berhak mendapatkan diskon berdasarkan total belanja mereka.
-
----
-
-## Kode Program
-
----
-
-## Penjelasan Struktur Kontrol Percabangan
-
 ### 1. Fungsi `total_bayar`
 
 - **Percabangan `if`**  
@@ -129,6 +117,22 @@ Struktur kontrol percabangan `if-else` sangat penting dalam logika pemberian dis
 - Membuat program lebih dinamis dan interaktif sesuai dengan input pengguna.
 
 ---
+# Contoh Output Program 
+**Input:**
 
-## Contoh Output
+    Masukkan total belanja: 700000
+
+Logika:
+
+    Total belanja: Rp700.000
+    Batas diskon: Rp500.000
+    Karena 700000 > 500000, maka pelanggan berhak mendapatkan diskon
+    Diskon = 10% dari 700000 = 70000
+    Total bayar setelah diskon = 700000 - 70000 = 630000
+**Output:**
+
+    Anda mendapatkan diskon sebesar 70000.00.
+    Total bayar setelah diskon adalah: 630000.00
+
+
 
