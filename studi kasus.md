@@ -1,5 +1,5 @@
 # STUDI KASUS 1 
- # Penjelasan Fungsi dan Rekursi pada Faktorial
+# # Penjelasan Fungsi dan Rekursi pada Faktorial
 
 ## Manfaat Penggunaan Fungsi
 
@@ -34,7 +34,7 @@ Jika n = 4, maka prosesnya seperti ini:**
 
 
 # STUDI KASUS 2 
-# Penjelasan penggunaan perulangan dan array (list) 
+# # Penjelasan penggunaan perulangan dan array (list) 
 
 
 #  1. Perulangan
@@ -134,5 +134,94 @@ Logika:
     Anda mendapatkan diskon sebesar 70000.00.
     Total bayar setelah diskon adalah: 630000.00
 
+# STUDI KASUS 4
+# # Penjelasan Penghitungan Total Harga Barang Menggunakan Python
+**1. Mulai (Start)**
+**Program dimulai oleh pengguna.**
 
+**2. Input Harga Barang Pertama**
+**Program meminta pengguna untuk memasukkan harga barang pertama, lalu menyimpannya dalam variabel harga1.**
 
+**3. Input Harga Barang Kedua**
+Program meminta pengguna untuk memasukkan harga barang kedua, lalu menyimpannya dalam variabel harga2.
+
+**4. Input Harga Barang Ketiga**
+Program meminta pengguna untuk memasukkan harga barang ketiga, lalu menyimpannya dalam variabel harga3.
+
+**5. Hitung Total Harga**
+Program menghitung total dengan menjumlahkan ketiga harga:
+total = harga1 + harga2 + harga3
+
+**6. Tampilkan Total Harga**
+Program mencetak atau menampilkan hasil total harga kepada pengguna.
+
+**7. Selesai (End)**
+Program selesai dijalankan.
+
+# STUDI KASUS 5
+# # Penjelasan Program Rata-rata Kelulusan
+
+# Peran Tipe Data dalam Program
+**Tipe data menentukan jenis nilai yang dapat disimpan dan dioperasikan dalam program. Dalam konteks program ini:**
+
+**1.Integer (int):**
+**Digunakan untuk menyimpan jumlah nilai yang akan dimasukkan oleh pengguna.
+Contoh: jumlah_nilai = int(input("Masukkan jumlah nilai: "))**
+
+**2. Float (float):**
+Digunakan untuk menyimpan nilai-nilai ujian yang mungkin berupa angka desimal.
+Contoh: nilai_input = float(input(f"Masukkan nilai ke-{i+1}: "))
+
+**3. List (list):**
+**Digunakan untuk menyimpan kumpulan nilai yang dimasukkan oleh pengguna.
+Contoh: nilai = []**
+
+**4. String (str):**
+**Digunakan untuk menyimpan dan menampilkan status kelulusan.
+Contoh: return "Lulus" if rata_rata >= 75 else "Tidak Lulus"**
+
+**5. Boolean (bool):
+Digunakan secara implisit dalam operasi perbandingan untuk menentukan kondisi benar atau salah.
+Contoh: rata_rata >= 75 menghasilkan True atau False**
+
+# Peran Operator dalam Program
+Operator digunakan untuk melakukan operasi pada variabel dan nilai. Dalam program ini:
+MySertifikasi
+
+**1. Operator Aritmatika:**
+Penjumlahan (+):
+Digunakan untuk menjumlahkan semua nilai dalam list.
+Contoh: sum(nilai_list)
+
+Pembagian (/):
+Digunakan untuk menghitung rata-rata nilai.
+Contoh: sum(nilai_list) / len(nilai_list)
+
+**2. Operator Perbandingan:**
+
+Lebih besar atau sama dengan (>=):
+Digunakan untuk menentukan apakah rata-rata memenuhi syarat kelulusan.
+Contoh: rata_rata >= 75
+
+**3. Operator Penugasan (=):**
+Digunakan untuk memberikan nilai ke variabel.
+Contoh: nilai = [], rata_rata = hitung_rata_rata(nilai)
+
+**4. Operator Logika:**
+Digunakan secara implisit dalam struktur kontrol seperti if untuk menentukan alur program berdasarkan kondisi.
+Contoh:
+
+    if rata_rata >= 75:
+    status = "Lulus"
+    else:
+    status = "Tidak Lulus"
+
+# Kesimpulan
+
+**Dalam program Python untuk menentukan kelulusan siswa berdasarkan rata-rata nilai:**
+
+**-Tipe data memastikan bahwa nilai yang dimasukkan dan diolah sesuai dengan jenisnya, memungkinkan operasi yang tepat dan menghindari kesalahan tipe.**
+
+**-Operator memungkinkan program melakukan perhitungan matematis dan logika untuk menentukan hasil akhir, seperti menghitung rata-rata dan mengevaluasi kondisi kelulusan.**
+
+Pemahaman yang baik tentang tipe data dan operator sangat penting dalam pemrograman, karena mereka adalah dasar dari manipulasi data dan kontrol alur program.**
