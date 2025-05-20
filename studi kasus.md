@@ -161,7 +161,7 @@ Program selesai dijalankan.
 # STUDI KASUS 5
 # # Penjelasan Program Rata-rata Kelulusan
 
-# Peran Tipe Data dalam Program
+# 1.  Peran Tipe Data dalam Program
 **Tipe data menentukan jenis nilai yang dapat disimpan dan dioperasikan dalam program. Dalam konteks program ini:**
 
 **1.Integer (int):**
@@ -184,9 +184,9 @@ Contoh: return "Lulus" if rata_rata >= 75 else "Tidak Lulus"**
 Digunakan secara implisit dalam operasi perbandingan untuk menentukan kondisi benar atau salah.
 Contoh: rata_rata >= 75 menghasilkan True atau False**
 
-# Peran Operator dalam Program
+# 2.  Peran Operator dalam Program
 Operator digunakan untuk melakukan operasi pada variabel dan nilai. Dalam program ini:
-MySertifikasi
+
 
 **1. Operator Aritmatika:**
 Penjumlahan (+):
