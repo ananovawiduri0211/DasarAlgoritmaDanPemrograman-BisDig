@@ -18,8 +18,8 @@ Aplikasi ini adalah simulasi sistem kasir sederhana untuk kedai kopi dan roti ya
 Aplikasi ini dijalankan di platform **Google Colaboratory (Colab)**, yaitu layanan berbasis cloud dari Google yang mendukung pemrograman Python tanpa perlu instalasi apapun di laptop Anda.
 
 ###  Langkah-langkah Menjalankan:
-1. **Buka link Google Colab aplikasi** (link disesuaikan dengan project Anda, contoh):
-   > [ Buka Aplikasi di Google Colab](https://colab.research.google.com/drive/YOUR-COLAB-ID)
+1. **Buka link Google Colab aplikasi**
+   > [ Buka Aplikasi di Google Colab](https://colab.research.google.com/drive/18VQgsuS0T_P8OFVVB-4mUz000yKYuN4B?usp=sharing)
 
 2. Jika diminta login, silakan login dengan akun Google Anda.
 
