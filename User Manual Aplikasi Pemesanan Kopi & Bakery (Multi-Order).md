@@ -19,7 +19,7 @@ Aplikasi ini dijalankan di platform **Google Colaboratory (Colab)**, yaitu layan
 
 ###  Langkah-langkah Menjalankan:
 1. **Buka link Google Colab aplikasi** (link disesuaikan dengan project Anda, contoh):
-   > [🔗 Buka Aplikasi di Google Colab](https://colab.research.google.com/drive/YOUR-COLAB-ID)
+   > [ Buka Aplikasi di Google Colab](https://colab.research.google.com/drive/YOUR-COLAB-ID)
 
 2. Jika diminta login, silakan login dengan akun Google Anda.
 
